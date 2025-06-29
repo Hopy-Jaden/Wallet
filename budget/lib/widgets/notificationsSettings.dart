@@ -359,10 +359,10 @@ Future<bool> scheduleDailyNotification(
       chosenMessage,
       dateTime,
       notificationDetails,
-      androidAllowWhileIdle: true,
+      //(old code after upgrading plugin) androidAllowWhileIdle: true,
       payload: 'addTransaction',
-      uiLocalNotificationDateInterpretation:
-          UILocalNotificationDateInterpretation.absoluteTime,
+      //(old code after upgrading plugin) uiLocalNotificationDateInterpretation:
+      //    UILocalNotificationDateInterpretation.absoluteTime,
       matchDateTimeComponents: DateTimeComponents.dateAndTime,
 
       // If exact time was used, need USE_EXACT_ALARM and SCHEDULE_EXACT_ALARM permissions
@@ -445,10 +445,10 @@ Future<bool> scheduleUpcomingTransactionsNotification(context) async {
         chosenMessage,
         dateTime,
         notificationDetails,
-        androidAllowWhileIdle: true,
+        //(old code after upgrading plugin) androidAllowWhileIdle: true,
         payload: 'upcomingTransaction',
-        uiLocalNotificationDateInterpretation:
-            UILocalNotificationDateInterpretation.absoluteTime,
+        //(old code after upgrading plugin) uiLocalNotificationDateInterpretation:
+        //    UILocalNotificationDateInterpretation.absoluteTime,
 
         // If exact time was used, need USE_EXACT_ALARM and SCHEDULE_EXACT_ALARM permissions
         // which are only meant for calendar/reminder based applications

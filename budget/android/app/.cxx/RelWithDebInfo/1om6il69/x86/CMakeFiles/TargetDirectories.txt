@@ -1,0 +1,2 @@
+E:/Projects/Wallet/budget/android/app/.cxx/RelWithDebInfo/1om6il69/x86/CMakeFiles/edit_cache.dir
+E:/Projects/Wallet/budget/android/app/.cxx/RelWithDebInfo/1om6il69/x86/CMakeFiles/rebuild_cache.dir

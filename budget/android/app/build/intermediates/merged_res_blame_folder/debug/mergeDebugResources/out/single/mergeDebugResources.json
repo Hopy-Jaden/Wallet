@@ -1,0 +1,178 @@
+[
+    {
+        "merged": "android.app-debug-92:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "android.app-main-94:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "android.app-debug-92:/drawable_net_worth_plus_widget.png.flat",
+        "source": "android.app-main-94:/drawable/net_worth_plus_widget.png"
+    },
+    {
+        "merged": "android.app-debug-92:/xml_net_worth_plus_widget.xml.flat",
+        "source": "android.app-main-94:/xml/net_worth_plus_widget.xml"
+    },
+    {
+        "merged": "android.app-debug-92:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "android.app-main-94:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "android.app-debug-92:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "android.app-main-94:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "android.app-debug-92:/mipmap-xxhdpi_ic_launcher_background.png.flat",
+        "source": "android.app-main-94:/mipmap-xxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "android.app-debug-92:/mipmap-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "android.app-main-94:/mipmap-xxxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "android.app-debug-92:/mipmap-xhdpi_ic_launcher_monochrome.png.flat",
+        "source": "android.app-main-94:/mipmap-xhdpi/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "android.app-debug-92:/drawable_transfertransaction.png.flat",
+        "source": "android.app-main-94:/drawable/transfertransaction.png"
+    },
+    {
+        "merged": "android.app-debug-92:/layout_plus_widget_layout.xml.flat",
+        "source": "android.app-main-94:/layout/plus_widget_layout.xml"
+    },
+    {
+        "merged": "android.app-debug-92:/raw_keep.xml.flat",
+        "source": "android.app-main-94:/raw/keep.xml"
+    },
+    {
+        "merged": "android.app-debug-92:/mipmap-mdpi_ic_launcher_monochrome.png.flat",
+        "source": "android.app-main-94:/mipmap-mdpi/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "android.app-debug-92:/drawable_notification_icon_android2.png.flat",
+        "source": "android.app-main-94:/drawable/notification_icon_android2.png"
+    },
+    {
+        "merged": "android.app-debug-92:/mipmap-hdpi_ic_launcher_background.png.flat",
+        "source": "android.app-main-94:/mipmap-hdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "android.app-debug-92:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "android.app-main-94:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "android.app-debug-92:/xml_plus_widget.xml.flat",
+        "source": "android.app-main-94:/xml/plus_widget.xml"
+    },
+    {
+        "merged": "android.app-debug-92:/mipmap-hdpi_ic_launcher_monochrome.png.flat",
+        "source": "android.app-main-94:/mipmap-hdpi/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "android.app-debug-92:/layout_net_worth_widget_layout.xml.flat",
+        "source": "android.app-main-94:/layout/net_worth_widget_layout.xml"
+    },
+    {
+        "merged": "android.app-debug-92:/drawable_addtransaction.png.flat",
+        "source": "android.app-main-94:/drawable/addtransaction.png"
+    },
+    {
+        "merged": "android.app-debug-92:/mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "android.app-main-94:/mipmap-mdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "android.app-debug-92:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "android.app-main-94:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "android.app-debug-92:/drawable_net_worth_widget.png.flat",
+        "source": "android.app-main-94:/drawable/net_worth_widget.png"
+    },
+    {
+        "merged": "android.app-debug-92:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "android.app-main-94:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "android.app-debug-92:/mipmap-xxhdpi_ic_launcher_monochrome.png.flat",
+        "source": "android.app-main-94:/mipmap-xxhdpi/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "android.app-debug-92:/drawable_plus_button.png.flat",
+        "source": "android.app-main-94:/drawable/plus_button.png"
+    },
+    {
+        "merged": "android.app-debug-92:/drawable_plus_widget.png.flat",
+        "source": "android.app-main-94:/drawable/plus_widget.png"
+    },
+    {
+        "merged": "android.app-debug-92:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "android.app-main-94:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "android.app-debug-92:/mipmap-xhdpi_ic_launcher_background.png.flat",
+        "source": "android.app-main-94:/mipmap-xhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "android.app-debug-92:/mipmap-xxxhdpi_ic_launcher_monochrome.png.flat",
+        "source": "android.app-main-94:/mipmap-xxxhdpi/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "android.app-debug-92:/drawable_widget_background.xml.flat",
+        "source": "android.app-main-94:/drawable/widget_background.xml"
+    },
+    {
+        "merged": "android.app-debug-92:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "android.app-main-94:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "android.app-debug-92:/drawable-v21_launch_background.xml.flat",
+        "source": "android.app-main-94:/drawable-v21/launch_background.xml"
+    },
+    {
+        "merged": "android.app-debug-92:/drawable_transfer_widget.png.flat",
+        "source": "android.app-main-94:/drawable/transfer_widget.png"
+    },
+    {
+        "merged": "android.app-debug-92:/layout_transfer_widget_layout.xml.flat",
+        "source": "android.app-main-94:/layout/transfer_widget_layout.xml"
+    },
+    {
+        "merged": "android.app-debug-92:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "android.app-main-94:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "android.app-debug-92:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "android.app-main-94:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "android.app-debug-92:/xml_transfer_widget.xml.flat",
+        "source": "android.app-main-94:/xml/transfer_widget.xml"
+    },
+    {
+        "merged": "android.app-debug-92:/drawable_piggybank.png.flat",
+        "source": "android.app-main-94:/drawable/piggybank.png"
+    },
+    {
+        "merged": "android.app-debug-92:/layout_net_worth_plus_widget_layout.xml.flat",
+        "source": "android.app-main-94:/layout/net_worth_plus_widget_layout.xml"
+    },
+    {
+        "merged": "android.app-debug-92:/drawable_piechart.png.flat",
+        "source": "android.app-main-94:/drawable/piechart.png"
+    },
+    {
+        "merged": "android.app-debug-92:/drawable_plus.png.flat",
+        "source": "android.app-main-94:/drawable/plus.png"
+    },
+    {
+        "merged": "android.app-debug-92:/xml_net_worth_widget.xml.flat",
+        "source": "android.app-main-94:/xml/net_worth_widget.xml"
+    },
+    {
+        "merged": "android.app-debug-92:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "android.app-main-94:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "android.app-debug-92:/drawable_transfer.png.flat",
+        "source": "android.app-main-94:/drawable/transfer.png"
+    }
+]

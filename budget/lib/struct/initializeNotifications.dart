@@ -21,7 +21,8 @@ Future<String?> initializeNotifications() async {
         AndroidInitializationSettings('notification_icon_android2');
     final DarwinInitializationSettings initializationSettingsDarwin =
         DarwinInitializationSettings(
-            onDidReceiveLocalNotification: (_, __, ___, ____) {});
+            //(old code after upgrading plugin) onDidReceiveLocalNotification: (_, __, ___, ____) {}
+            );
 
     final InitializationSettings initializationSettings =
         InitializationSettings(

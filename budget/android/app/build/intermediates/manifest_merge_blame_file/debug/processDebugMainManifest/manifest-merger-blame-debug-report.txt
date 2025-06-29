@@ -1,0 +1,1123 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.budget.tracker_app"
+4    android:versionCode="416"
+5    android:versionName="5.4.3" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="35" />
+10    <!-- package="com.budget.tracker_app" -->
+11    <!--
+12         Flutter needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:3:3-64
+15-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:3:20-62
+16    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+16-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:4:3-69
+16-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:4:20-67
+17    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+17-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:5:3-74
+17-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:5:20-72
+18    <uses-permission android:name="com.android.vending.BILLING" />
+18-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:6:3-65
+18-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:6:20-62
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+19-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:7:3-78
+19-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:7:20-76
+20    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+20-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:8:3-77
+20-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:8:20-75
+21
+22    <queries>
+22-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:9:3-30:13
+23
+24        <!-- If your app opens https URLs -->
+25        <intent>
+25-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:11:5-14:14
+26            <action android:name="android.intent.action.VIEW" />
+26-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:12:7-59
+26-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:12:15-56
+27
+28            <data android:scheme="https" />
+28-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:13:7-38
+28-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:13:13-35
+29        </intent>
+30        <!-- If your app makes calls -->
+31        <intent>
+31-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:16:5-19:14
+32            <action android:name="android.intent.action.DIAL" />
+32-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:17:7-59
+32-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:17:15-56
+33
+34            <data android:scheme="tel" />
+34-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:13:7-38
+34-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:13:13-35
+35        </intent>
+36        <!-- If your sends SMS messages -->
+37        <intent>
+37-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:21:5-24:14
+38            <action android:name="android.intent.action.SENDTO" />
+38-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:22:7-61
+38-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:22:15-58
+39
+40            <data android:scheme="smsto" />
+40-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:13:7-38
+40-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:13:13-35
+41        </intent>
+42        <!-- If your app sends emails -->
+43        <intent>
+43-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:26:5-29:14
+44            <action android:name="android.intent.action.SEND" />
+44-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:27:7-59
+44-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:27:15-56
+45
+46            <data android:mimeType="*/*" />
+46-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:13:7-38
+47        </intent>
+48        <intent>
+48-->[:file_picker] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\file_picker-10.2.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-12:18
+49            <action android:name="android.intent.action.GET_CONTENT" />
+49-->[:file_picker] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\file_picker-10.2.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-72
+49-->[:file_picker] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\file_picker-10.2.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:21-69
+50
+51            <data android:mimeType="*/*" />
+51-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:13:7-38
+52        </intent>
+53        <intent>
+53-->[com.android.billingclient:billing:7.1.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1a540e2b3b0439f6775f7582b760f602\transformed\jetified-billing-7.1.1\AndroidManifest.xml:13:9-15:18
+54            <action android:name="com.android.vending.billing.InAppBillingService.BIND" />
+54-->[com.android.billingclient:billing:7.1.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1a540e2b3b0439f6775f7582b760f602\transformed\jetified-billing-7.1.1\AndroidManifest.xml:14:13-91
+54-->[com.android.billingclient:billing:7.1.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1a540e2b3b0439f6775f7582b760f602\transformed\jetified-billing-7.1.1\AndroidManifest.xml:14:21-88
+55        </intent>
+56        <intent>
+56-->[com.android.billingclient:billing:7.1.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1a540e2b3b0439f6775f7582b760f602\transformed\jetified-billing-7.1.1\AndroidManifest.xml:16:9-18:18
+57            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND" />
+57-->[com.android.billingclient:billing:7.1.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1a540e2b3b0439f6775f7582b760f602\transformed\jetified-billing-7.1.1\AndroidManifest.xml:17:13-116
+57-->[com.android.billingclient:billing:7.1.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1a540e2b3b0439f6775f7582b760f602\transformed\jetified-billing-7.1.1\AndroidManifest.xml:17:21-113
+58        </intent>
+59    </queries>
+60
+61    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+61-->[:installed_apps] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\installed_apps-1.6.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-77
+61-->[:installed_apps] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\installed_apps-1.6.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:22-74
+62    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+62-->[:installed_apps] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\installed_apps-1.6.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:5-82
+62-->[:installed_apps] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\installed_apps-1.6.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:22-79
+63    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+63-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\c0914c56929fa0292827ebac52095f76\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:26:5-79
+63-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\c0914c56929fa0292827ebac52095f76\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:26:22-76
+64    <uses-permission android:name="android.permission.VIBRATE" />
+64-->[:flutter_local_notifications] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_local_notifications-19.3.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-66
+64-->[:flutter_local_notifications] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_local_notifications-19.3.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:22-63
+65    <uses-permission android:name="android.permission.WAKE_LOCK" />
+65-->[:flutter_notification_listener] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_notification_listener-1.3.4\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:5-68
+65-->[:flutter_notification_listener] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_notification_listener-1.3.4\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:22-65
+66    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+66-->[:flutter_notification_listener] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_notification_listener-1.3.4\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:5-81
+66-->[:flutter_notification_listener] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_notification_listener-1.3.4\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:22-78
+67    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- suppress DeprecatedClassUsageInspection -->
+67-->[:flutter_notification_listener] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_notification_listener-1.3.4\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:5-77
+67-->[:flutter_notification_listener] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_notification_listener-1.3.4\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:22-74
+68    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+68-->[androidx.biometric:biometric:1.1.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\f464f2e06b3e4956c5b326f235829c9d\transformed\biometric-1.1.0\AndroidManifest.xml:27:5-74
+68-->[androidx.biometric:biometric:1.1.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\f464f2e06b3e4956c5b326f235829c9d\transformed\biometric-1.1.0\AndroidManifest.xml:27:22-71
+69    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+69-->[com.google.android.recaptcha:recaptcha:18.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\f31f4d1932230fb3dc4e5fd5de3a95bc\transformed\jetified-recaptcha-18.7.1\AndroidManifest.xml:9:5-98
+69-->[com.google.android.recaptcha:recaptcha:18.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\f31f4d1932230fb3dc4e5fd5de3a95bc\transformed\jetified-recaptcha-18.7.1\AndroidManifest.xml:9:22-95
+70
+71    <permission
+71-->[androidx.core:core:1.15.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\d1a2b7bd135ac5da1acef0e5d4e75531\transformed\core-1.15.0\AndroidManifest.xml:22:5-24:47
+72        android:name="com.budget.tracker_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+72-->[androidx.core:core:1.15.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\d1a2b7bd135ac5da1acef0e5d4e75531\transformed\core-1.15.0\AndroidManifest.xml:23:9-81
+73        android:protectionLevel="signature" />
+73-->[androidx.core:core:1.15.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\d1a2b7bd135ac5da1acef0e5d4e75531\transformed\core-1.15.0\AndroidManifest.xml:24:9-44
+74
+75    <uses-permission android:name="com.budget.tracker_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+75-->[androidx.core:core:1.15.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\d1a2b7bd135ac5da1acef0e5d4e75531\transformed\core-1.15.0\AndroidManifest.xml:26:5-97
+75-->[androidx.core:core:1.15.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\d1a2b7bd135ac5da1acef0e5d4e75531\transformed\core-1.15.0\AndroidManifest.xml:26:22-94
+76
+77    <application
+77-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:31:5-147:19
+78        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+78-->[androidx.core:core:1.15.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\d1a2b7bd135ac5da1acef0e5d4e75531\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
+79        android:debuggable="true"
+80        android:extractNativeLibs="false"
+81        android:icon="@mipmap/ic_launcher"
+81-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:34:9-43
+82        android:label="Cashew"
+82-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:33:9-31
+83        android:requestLegacyExternalStorage="true" >
+83-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:32:9-52
+84
+85        <!-- Use the new rendering engine Impeller (experimental) -->
+86        <!--
+87        <meta-data
+88        android:name="io.flutter.embedding.android.EnableImpeller"
+89        android:value="true" />
+90        -->
+91        <activity
+91-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:39:9-77:20
+92            android:name="android.MainActivity"
+92-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:41:13-41
+93            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+93-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:44:13-163
+94            android:exported="true"
+94-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:40:13-36
+95            android:hardwareAccelerated="true"
+95-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:45:13-47
+96            android:launchMode="singleInstance"
+96-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:42:13-48
+97            android:theme="@style/LaunchTheme"
+97-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:43:13-47
+98            android:windowSoftInputMode="adjustResize" >
+98-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:46:13-55
+99            <intent-filter android:autoVerify="true" >
+99-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:48:13-54:29
+99-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:48:28-53
+100                <action android:name="android.intent.action.VIEW" />
+100-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:12:7-59
+100-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:12:15-56
+101
+102                <category android:name="android.intent.category.DEFAULT" />
+102-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:50:17-76
+102-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:50:27-73
+103                <category android:name="android.intent.category.BROWSABLE" />
+103-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:51:17-78
+103-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:51:27-75
+104
+105                <data
+105-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:13:7-38
+106                    android:host="cashewapp.web.app"
+107                    android:pathPrefix="/addTransaction"
+108                    android:scheme="https" />
+108-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:13:13-35
+109                <data
+109-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:13:7-38
+110                    android:host="cashewapp.web.app"
+111                    android:pathPrefix="/addTransactionRoute"
+112                    android:scheme="https" />
+112-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:13:13-35
+113            </intent-filter>
+114
+115            <!--
+116                 Specifies an Android theme to apply to this Activity as soon as
+117                 the Android process has started. This theme is visible to the user
+118                 while the Flutter UI initializes. After that, this theme continues
+119                 to determine the Window background behind the Flutter UI.
+120            -->
+121            <meta-data
+121-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:60:13-63:17
+122                android:name="io.flutter.embedding.android.NormalTheme"
+122-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:61:15-70
+123                android:resource="@style/NormalTheme" />
+123-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:62:15-52
+124            <!--
+125                 Displays an Android View that continues showing the launch screen
+126                 Drawable until Flutter paints its first frame, then this splash
+127                 screen fades out. A splash screen is useful to avoid any visual
+128                 gap between the end of Android's launch screen and the painting of
+129                 Flutter's first frame.
+130            -->
+131            <meta-data
+131-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:69:13-72:17
+132                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+132-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:70:15-79
+133                android:resource="@drawable/launch_background" />
+133-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:71:15-61
+134
+135            <intent-filter>
+135-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:73:13-76:29
+136                <action android:name="android.intent.action.MAIN" />
+136-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:74:17-68
+136-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:74:25-66
+137
+138                <category android:name="android.intent.category.LAUNCHER" />
+138-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:75:17-76
+138-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:75:27-74
+139            </intent-filter>
+140        </activity>
+141
+142        <receiver
+142-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:78:9-131
+143            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+143-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:78:44-128
+144            android:exported="false" />
+144-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:78:19-43
+145        <receiver
+145-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:79:9-86:20
+146            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+146-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:79:44-132
+147            android:exported="false" >
+147-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:79:19-43
+148            <intent-filter>
+148-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:80:13-85:29
+149                <action android:name="android.intent.action.BOOT_COMPLETED" />
+149-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:81:17-78
+149-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:81:25-76
+150                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+150-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:82:17-83
+150-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:82:25-81
+151                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+151-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:83:17-82
+151-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:83:25-79
+152                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+152-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:84:17-81
+152-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:84:25-79
+153            </intent-filter>
+154        </receiver>
+155
+156        <service
+156-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:87:9-92:19
+157            android:name="notification.listener.service.NotificationListener"
+157-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:87:48-113
+158            android:exported="true"
+158-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:88:86-109
+159            android:label="notifications"
+159-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:87:18-47
+160            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+160-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:88:11-85
+161            <intent-filter>
+161-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:89:13-91:29
+162                <action android:name="android.service.notification.NotificationListenerService" />
+162-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:90:17-99
+162-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:90:25-96
+163            </intent-filter>
+164        </service>
+165
+166        <receiver
+166-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:93:9-100:20
+167            android:name="android.PlusWidgetProvider"
+167-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:93:19-52
+168            android:exported="true"
+168-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:94:13-36
+169            android:label="Transaction Shortcut" >
+169-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:94:37-73
+170            <intent-filter>
+170-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:95:13-97:29
+171                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+171-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:96:17-84
+171-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:96:25-81
+172            </intent-filter>
+173
+174            <meta-data
+174-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:98:13-99:55
+175                android:name="android.appwidget.provider"
+175-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:98:24-65
+176                android:resource="@xml/plus_widget" />
+176-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:99:17-52
+177        </receiver>
+178        <receiver
+178-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:101:9-108:20
+179            android:name="android.TransferWidgetProvider"
+179-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:101:19-56
+180            android:exported="true"
+180-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:102:13-36
+181            android:label="Transfer Shortcut" >
+181-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:102:37-70
+182            <intent-filter>
+182-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:95:13-97:29
+183                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+183-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:96:17-84
+183-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:96:25-81
+184            </intent-filter>
+185
+186            <meta-data
+186-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:98:13-99:55
+187                android:name="android.appwidget.provider"
+187-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:98:24-65
+188                android:resource="@xml/transfer_widget" />
+188-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:99:17-52
+189        </receiver>
+190        <receiver
+190-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:109:9-116:20
+191            android:name="android.NetWorthPlusWidgetProvider"
+191-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:109:19-60
+192            android:exported="true"
+192-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:110:13-36
+193            android:label="Net Total Wide" >
+193-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:110:37-67
+194            <intent-filter>
+194-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:95:13-97:29
+195                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+195-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:96:17-84
+195-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:96:25-81
+196            </intent-filter>
+197
+198            <meta-data
+198-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:98:13-99:55
+199                android:name="android.appwidget.provider"
+199-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:98:24-65
+200                android:resource="@xml/net_worth_plus_widget" />
+200-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:99:17-52
+201        </receiver>
+202        <receiver
+202-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:117:9-124:20
+203            android:name="android.NetWorthWidgetProvider"
+203-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:117:19-56
+204            android:exported="true"
+204-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:118:13-36
+205            android:label="Net Total" >
+205-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:118:37-62
+206            <intent-filter>
+206-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:95:13-97:29
+207                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+207-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:96:17-84
+207-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:96:25-81
+208            </intent-filter>
+209
+210            <meta-data
+210-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:98:13-99:55
+211                android:name="android.appwidget.provider"
+211-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:98:24-65
+212                android:resource="@xml/net_worth_widget" />
+212-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:99:17-52
+213        </receiver>
+214        <!--
+215        <service android:name="im.zoe.labs.flutter_notification_listener.NotificationsHandlerService"
+216            android:label="Flutter Notifications Handler"
+217            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+218            <intent-filter>
+219                <action android:name="android.service.notification.NotificationListenerService" />
+220            </intent-filter>
+221        </service>
+222        <receiver android:name="im.zoe.labs.flutter_notification_listener.RebootBroadcastReceiver"
+223            android:enabled="true">
+224            <intent-filter>
+225                <action android:name="android.intent.action.BOOT_COMPLETED" />
+226                <action android:name="android.intent.action.BOOT_COMPLETED" />
+227                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+228                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+229                <action android:name="android.intent.action.REBOOT"/>
+230            </intent-filter>
+231        </receiver>
+232        -->
+233        <!--
+234             Don't delete the meta-data below.
+235             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+236        -->
+237        <meta-data
+237-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:144:9-146:33
+238            android:name="flutterEmbedding"
+238-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:145:13-44
+239            android:value="2" />
+239-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:146:13-30
+240        <!--
+241           Declares a provider which allows us to store files to share in
+242           '.../caches/share_plus' and grant the receiving action access
+243        -->
+244        <provider
+244-->[:share_plus] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-11.0.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:9-21:20
+245            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+245-->[:share_plus] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-11.0.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:13-77
+246            android:authorities="com.budget.tracker_app.flutter.share_provider"
+246-->[:share_plus] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-11.0.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:13-74
+247            android:exported="false"
+247-->[:share_plus] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-11.0.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:16:13-37
+248            android:grantUriPermissions="true" >
+248-->[:share_plus] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-11.0.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:17:13-47
+249            <meta-data
+249-->[:share_plus] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-11.0.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:18:13-20:68
+250                android:name="android.support.FILE_PROVIDER_PATHS"
+250-->[:share_plus] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-11.0.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:19:17-67
+251                android:resource="@xml/flutter_share_file_paths" />
+251-->[:share_plus] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-11.0.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:20:17-65
+252        </provider>
+253        <!--
+254           This manifest declared broadcast receiver allows us to use an explicit
+255           Intent when creating a PendingItent to be informed of the user's choice
+256        -->
+257        <receiver
+257-->[:share_plus] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-11.0.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:26:9-32:20
+258            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
+258-->[:share_plus] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-11.0.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:27:13-82
+259            android:exported="false" >
+259-->[:share_plus] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-11.0.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:28:13-37
+260            <intent-filter>
+260-->[:share_plus] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-11.0.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:29:13-31:29
+261                <action android:name="EXTRA_CHOSEN_COMPONENT" />
+261-->[:share_plus] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-11.0.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:30:17-65
+261-->[:share_plus] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-11.0.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:30:25-62
+262            </intent-filter>
+263        </receiver>
+264
+265        <service
+265-->[:cloud_firestore] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\cloud_firestore-5.4.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-12:19
+266            android:name="com.google.firebase.components.ComponentDiscoveryService"
+266-->[:cloud_firestore] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\cloud_firestore-5.4.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:18-89
+267            android:directBootAware="true"
+267-->[com.google.firebase:firebase-common:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\b269c039640a6516ca1d1ee70aba7e23\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+268            android:exported="false" >
+268-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\c0914c56929fa0292827ebac52095f76\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:68:13-37
+269            <meta-data
+269-->[:cloud_firestore] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\cloud_firestore-5.4.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-11:85
+270                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+270-->[:cloud_firestore] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\cloud_firestore-5.4.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:17-134
+271                android:value="com.google.firebase.components.ComponentRegistrar" />
+271-->[:cloud_firestore] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\cloud_firestore-5.4.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:17-82
+272            <meta-data
+272-->[:firebase_auth] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_auth-5.6.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-11:85
+273                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+273-->[:firebase_auth] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_auth-5.6.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:17-124
+274                android:value="com.google.firebase.components.ComponentRegistrar" />
+274-->[:firebase_auth] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_auth-5.6.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:17-82
+275            <meta-data
+275-->[:firebase_core] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-3.14.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-11:85
+276                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+276-->[:firebase_core] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-3.14.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:17-124
+277                android:value="com.google.firebase.components.ComponentRegistrar" />
+277-->[:firebase_core] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-3.14.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:17-82
+278            <meta-data
+278-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\c0914c56929fa0292827ebac52095f76\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:69:13-71:85
+279                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+279-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\c0914c56929fa0292827ebac52095f76\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:70:17-109
+280                android:value="com.google.firebase.components.ComponentRegistrar" />
+280-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\c0914c56929fa0292827ebac52095f76\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:71:17-82
+281            <meta-data
+281-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\e0854807a86577f5767de60e9148957d\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:17:13-19:85
+282                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+282-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\e0854807a86577f5767de60e9148957d\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:18:17-122
+283                android:value="com.google.firebase.components.ComponentRegistrar" />
+283-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\e0854807a86577f5767de60e9148957d\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:19:17-82
+284            <meta-data
+284-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\e0854807a86577f5767de60e9148957d\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:20:13-22:85
+285                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+285-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\e0854807a86577f5767de60e9148957d\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:21:17-111
+286                android:value="com.google.firebase.components.ComponentRegistrar" />
+286-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\e0854807a86577f5767de60e9148957d\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:22:17-82
+287            <meta-data
+287-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\d5ebb497e7c33bac0909fca3b830548e\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+288                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+288-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\d5ebb497e7c33bac0909fca3b830548e\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+289                android:value="com.google.firebase.components.ComponentRegistrar" />
+289-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\d5ebb497e7c33bac0909fca3b830548e\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+290            <meta-data
+290-->[com.google.firebase:firebase-common:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\b269c039640a6516ca1d1ee70aba7e23\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+291                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+291-->[com.google.firebase:firebase-common:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\b269c039640a6516ca1d1ee70aba7e23\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+292                android:value="com.google.firebase.components.ComponentRegistrar" />
+292-->[com.google.firebase:firebase-common:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\b269c039640a6516ca1d1ee70aba7e23\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+293        </service>
+294
+295        <activity
+295-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\c0914c56929fa0292827ebac52095f76\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:29:9-46:20
+296            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+296-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\c0914c56929fa0292827ebac52095f76\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:30:13-80
+297            android:excludeFromRecents="true"
+297-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\c0914c56929fa0292827ebac52095f76\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:31:13-46
+298            android:exported="true"
+298-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\c0914c56929fa0292827ebac52095f76\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:32:13-36
+299            android:launchMode="singleTask"
+299-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\c0914c56929fa0292827ebac52095f76\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:33:13-44
+300            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+300-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\c0914c56929fa0292827ebac52095f76\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:34:13-72
+301            <intent-filter>
+301-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\c0914c56929fa0292827ebac52095f76\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:35:13-45:29
+302                <action android:name="android.intent.action.VIEW" />
+302-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:12:7-59
+302-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:12:15-56
+303
+304                <category android:name="android.intent.category.DEFAULT" />
+304-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:50:17-76
+304-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:50:27-73
+305                <category android:name="android.intent.category.BROWSABLE" />
+305-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:51:17-78
+305-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:51:27-75
+306
+307                <data
+307-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:13:7-38
+308                    android:host="firebase.auth"
+309                    android:path="/"
+310                    android:scheme="genericidp" />
+310-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:13:13-35
+311            </intent-filter>
+312        </activity>
+313        <activity
+313-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\c0914c56929fa0292827ebac52095f76\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:47:9-64:20
+314            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+314-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\c0914c56929fa0292827ebac52095f76\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:48:13-79
+315            android:excludeFromRecents="true"
+315-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\c0914c56929fa0292827ebac52095f76\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:49:13-46
+316            android:exported="true"
+316-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\c0914c56929fa0292827ebac52095f76\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:50:13-36
+317            android:launchMode="singleTask"
+317-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\c0914c56929fa0292827ebac52095f76\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:51:13-44
+318            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+318-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\c0914c56929fa0292827ebac52095f76\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:52:13-72
+319            <intent-filter>
+319-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\c0914c56929fa0292827ebac52095f76\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:53:13-63:29
+320                <action android:name="android.intent.action.VIEW" />
+320-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:12:7-59
+320-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:12:15-56
+321
+322                <category android:name="android.intent.category.DEFAULT" />
+322-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:50:17-76
+322-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:50:27-73
+323                <category android:name="android.intent.category.BROWSABLE" />
+323-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:51:17-78
+323-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:51:27-75
+324
+325                <data
+325-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:13:7-38
+326                    android:host="firebase.auth"
+327                    android:path="/"
+328                    android:scheme="recaptcha" />
+328-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:13:13-35
+329            </intent-filter>
+330        </activity>
+331
+332        <provider
+332-->[:image_picker_android] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+23\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:9-17:20
+333            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+333-->[:image_picker_android] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+23\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-82
+334            android:authorities="com.budget.tracker_app.flutter.image_provider"
+334-->[:image_picker_android] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+23\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-74
+335            android:exported="false"
+335-->[:image_picker_android] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+23\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:13-37
+336            android:grantUriPermissions="true" >
+336-->[:image_picker_android] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+23\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-47
+337            <meta-data
+337-->[:share_plus] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-11.0.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:18:13-20:68
+338                android:name="android.support.FILE_PROVIDER_PATHS"
+338-->[:share_plus] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-11.0.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:19:17-67
+339                android:resource="@xml/flutter_image_picker_file_paths" />
+339-->[:share_plus] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-11.0.0\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:20:17-65
+340        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+341        <service
+341-->[:image_picker_android] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+23\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:19:9-31:19
+342            android:name="com.google.android.gms.metadata.ModuleDependencies"
+342-->[:image_picker_android] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+23\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:20:13-78
+343            android:enabled="false"
+343-->[:image_picker_android] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+23\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:21:13-36
+344            android:exported="false" >
+344-->[:image_picker_android] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+23\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:22:13-37
+345            <intent-filter>
+345-->[:image_picker_android] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+23\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:24:13-26:29
+346                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+346-->[:image_picker_android] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+23\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:17-94
+346-->[:image_picker_android] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+23\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:25-91
+347            </intent-filter>
+348
+349            <meta-data
+349-->[:image_picker_android] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+23\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:28:13-30:36
+350                android:name="photopicker_activity:0:required"
+350-->[:image_picker_android] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+23\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:29:17-63
+351                android:value="" />
+351-->[:image_picker_android] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+23\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:30:17-33
+352        </service>
+353
+354        <activity
+354-->[:url_launcher_android] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.3.16\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-11:74
+355            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+355-->[:url_launcher_android] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.3.16\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-74
+356            android:exported="false"
+356-->[:url_launcher_android] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.3.16\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-37
+357            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+357-->[:url_launcher_android] C:\Users\HopyJ\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.3.16\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-71
+358        <!--
+359          Any addition to or deletion of the components below should also have a corresponding
+360          change to the GlanceComponents class, so that alternate subclasses of these components may
+361          be specified by Glance users. Please also add a release note so that users of the
+362          multiprocess library will know if they need to add another manifest entry.
+363        -->
+364        <activity
+364-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:30:9-35:62
+365            android:name="androidx.glance.appwidget.action.ActionTrampolineActivity"
+365-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:31:13-85
+366            android:enabled="true"
+366-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:32:13-35
+367            android:excludeFromRecents="true"
+367-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:33:13-46
+368            android:exported="false"
+368-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:34:13-37
+369            android:theme="@android:style/Theme.NoDisplay" />
+369-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:35:13-59
+370        <activity
+370-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:36:9-43:81
+371            android:name="androidx.glance.appwidget.action.InvisibleActionTrampolineActivity"
+371-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:37:13-94
+372            android:enabled="true"
+372-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:38:13-35
+373            android:exported="false"
+373-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:39:13-37
+374            android:launchMode="singleInstance"
+374-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:40:13-48
+375            android:noHistory="true"
+375-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:41:13-37
+376            android:taskAffinity="androidx.glance.appwidget.ListAdapterCallbackTrampoline"
+376-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:42:13-91
+377            android:theme="@style/Widget.Glance.AppWidget.CallbackTrampoline" />
+377-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:43:13-78
+378
+379        <receiver
+379-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:45:9-48:40
+380            android:name="androidx.glance.appwidget.action.ActionCallbackBroadcastReceiver"
+380-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:46:13-92
+381            android:enabled="true"
+381-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:47:13-35
+382            android:exported="false" />
+382-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:48:13-37
+383        <receiver
+383-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:49:9-52:40
+384            android:name="androidx.glance.appwidget.UnmanagedSessionReceiver"
+384-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:50:13-78
+385            android:enabled="true"
+385-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:51:13-35
+386            android:exported="false" />
+386-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:52:13-37
+387        <receiver
+387-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:53:9-60:20
+388            android:name="androidx.glance.appwidget.MyPackageReplacedReceiver"
+388-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:54:13-79
+389            android:enabled="true"
+389-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:55:13-35
+390            android:exported="false" >
+390-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:56:13-37
+391            <intent-filter>
+391-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:57:13-59:29
+392                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+392-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:82:17-83
+392-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:82:25-81
+393            </intent-filter>
+394        </receiver>
+395
+396        <service
+396-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:62:9-65:72
+397            android:name="androidx.glance.appwidget.GlanceRemoteViewsService"
+397-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:63:13-78
+398            android:exported="true"
+398-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:64:13-36
+399            android:permission="android.permission.BIND_REMOTEVIEWS" />
+399-->[androidx.glance:glance-appwidget:1.2.0-alpha01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bb0b26050f3c26d6d71d4dde56d22816\transformed\jetified-glance-appwidget-1.2.0-alpha01\AndroidManifest.xml:65:13-69
+400        <service
+400-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bff96c5fd595c78c4271150b0cac8bfe\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+401            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+401-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bff96c5fd595c78c4271150b0cac8bfe\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+402            android:enabled="true"
+402-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bff96c5fd595c78c4271150b0cac8bfe\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+403            android:exported="false" >
+403-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bff96c5fd595c78c4271150b0cac8bfe\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+404            <meta-data
+404-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bff96c5fd595c78c4271150b0cac8bfe\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+405                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+405-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bff96c5fd595c78c4271150b0cac8bfe\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+406                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+406-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bff96c5fd595c78c4271150b0cac8bfe\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+407        </service>
+408
+409        <activity
+409-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bff96c5fd595c78c4271150b0cac8bfe\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+410            android:name="androidx.credentials.playservices.HiddenActivity"
+410-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bff96c5fd595c78c4271150b0cac8bfe\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+411            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+411-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bff96c5fd595c78c4271150b0cac8bfe\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+412            android:enabled="true"
+412-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bff96c5fd595c78c4271150b0cac8bfe\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+413            android:exported="false"
+413-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bff96c5fd595c78c4271150b0cac8bfe\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+414            android:fitsSystemWindows="true"
+414-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bff96c5fd595c78c4271150b0cac8bfe\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+415            android:theme="@style/Theme.Hidden" >
+415-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\bff96c5fd595c78c4271150b0cac8bfe\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+416        </activity>
+417        <activity
+417-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1d0c6473155b65a6ead40e7c2a621d83\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:23:9-27:75
+418            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+418-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1d0c6473155b65a6ead40e7c2a621d83\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:24:13-93
+419            android:excludeFromRecents="true"
+419-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1d0c6473155b65a6ead40e7c2a621d83\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:25:13-46
+420            android:exported="false"
+420-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1d0c6473155b65a6ead40e7c2a621d83\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:26:13-37
+421            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+421-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1d0c6473155b65a6ead40e7c2a621d83\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:27:13-72
+422        <!--
+423            Service handling Google Sign-In user revocation. For apps that do not integrate with
+424            Google Sign-In, this service will never be started.
+425        -->
+426        <service
+426-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1d0c6473155b65a6ead40e7c2a621d83\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:33:9-37:51
+427            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+427-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1d0c6473155b65a6ead40e7c2a621d83\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:34:13-89
+428            android:exported="true"
+428-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1d0c6473155b65a6ead40e7c2a621d83\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:35:13-36
+429            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+429-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1d0c6473155b65a6ead40e7c2a621d83\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:36:13-107
+430            android:visibleToInstantApps="true" />
+430-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1d0c6473155b65a6ead40e7c2a621d83\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:37:13-48
+431
+432        <meta-data
+432-->[com.android.billingclient:billing:7.1.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1a540e2b3b0439f6775f7582b760f602\transformed\jetified-billing-7.1.1\AndroidManifest.xml:22:9-24:37
+433            android:name="com.google.android.play.billingclient.version"
+433-->[com.android.billingclient:billing:7.1.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1a540e2b3b0439f6775f7582b760f602\transformed\jetified-billing-7.1.1\AndroidManifest.xml:23:13-73
+434            android:value="7.1.1" />
+434-->[com.android.billingclient:billing:7.1.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1a540e2b3b0439f6775f7582b760f602\transformed\jetified-billing-7.1.1\AndroidManifest.xml:24:13-34
+435
+436        <activity
+436-->[com.android.billingclient:billing:7.1.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1a540e2b3b0439f6775f7582b760f602\transformed\jetified-billing-7.1.1\AndroidManifest.xml:26:9-30:75
+437            android:name="com.android.billingclient.api.ProxyBillingActivity"
+437-->[com.android.billingclient:billing:7.1.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1a540e2b3b0439f6775f7582b760f602\transformed\jetified-billing-7.1.1\AndroidManifest.xml:27:13-78
+438            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+438-->[com.android.billingclient:billing:7.1.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1a540e2b3b0439f6775f7582b760f602\transformed\jetified-billing-7.1.1\AndroidManifest.xml:28:13-96
+439            android:exported="false"
+439-->[com.android.billingclient:billing:7.1.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1a540e2b3b0439f6775f7582b760f602\transformed\jetified-billing-7.1.1\AndroidManifest.xml:29:13-37
+440            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+440-->[com.android.billingclient:billing:7.1.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1a540e2b3b0439f6775f7582b760f602\transformed\jetified-billing-7.1.1\AndroidManifest.xml:30:13-72
+441        <activity
+441-->[com.android.billingclient:billing:7.1.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1a540e2b3b0439f6775f7582b760f602\transformed\jetified-billing-7.1.1\AndroidManifest.xml:31:9-35:75
+442            android:name="com.android.billingclient.api.ProxyBillingActivityV2"
+442-->[com.android.billingclient:billing:7.1.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1a540e2b3b0439f6775f7582b760f602\transformed\jetified-billing-7.1.1\AndroidManifest.xml:32:13-80
+443            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+443-->[com.android.billingclient:billing:7.1.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1a540e2b3b0439f6775f7582b760f602\transformed\jetified-billing-7.1.1\AndroidManifest.xml:33:13-96
+444            android:exported="false"
+444-->[com.android.billingclient:billing:7.1.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1a540e2b3b0439f6775f7582b760f602\transformed\jetified-billing-7.1.1\AndroidManifest.xml:34:13-37
+445            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+445-->[com.android.billingclient:billing:7.1.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1a540e2b3b0439f6775f7582b760f602\transformed\jetified-billing-7.1.1\AndroidManifest.xml:35:13-72
+446
+447        <provider
+447-->[com.google.firebase:firebase-common:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\b269c039640a6516ca1d1ee70aba7e23\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+448            android:name="com.google.firebase.provider.FirebaseInitProvider"
+448-->[com.google.firebase:firebase-common:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\b269c039640a6516ca1d1ee70aba7e23\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+449            android:authorities="com.budget.tracker_app.firebaseinitprovider"
+449-->[com.google.firebase:firebase-common:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\b269c039640a6516ca1d1ee70aba7e23\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+450            android:directBootAware="true"
+450-->[com.google.firebase:firebase-common:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\b269c039640a6516ca1d1ee70aba7e23\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+451            android:exported="false"
+451-->[com.google.firebase:firebase-common:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\b269c039640a6516ca1d1ee70aba7e23\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+452            android:initOrder="100" />
+452-->[com.google.firebase:firebase-common:21.0.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\b269c039640a6516ca1d1ee70aba7e23\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+453
+454        <activity
+454-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\89886a26205a4fdd0c97803ee766ac9d\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+455            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+455-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\89886a26205a4fdd0c97803ee766ac9d\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+456            android:exported="false"
+456-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\89886a26205a4fdd0c97803ee766ac9d\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+457            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+457-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\89886a26205a4fdd0c97803ee766ac9d\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+458
+459        <provider
+459-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:31:9-39:20
+460            android:name="androidx.startup.InitializationProvider"
+460-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:32:13-67
+461            android:authorities="com.budget.tracker_app.androidx-startup"
+461-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:33:13-68
+462            android:exported="false" >
+462-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:34:13-37
+463            <meta-data
+463-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:36:13-38:52
+464                android:name="androidx.work.WorkManagerInitializer"
+464-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:37:17-68
+465                android:value="androidx.startup" />
+465-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:38:17-49
+466            <meta-data
+466-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\a75310be34a7399e76109ef33395f9d4\transformed\jetified-lifecycle-process-2.8.7\AndroidManifest.xml:29:13-31:52
+467                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+467-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\a75310be34a7399e76109ef33395f9d4\transformed\jetified-lifecycle-process-2.8.7\AndroidManifest.xml:30:17-78
+468                android:value="androidx.startup" />
+468-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\a75310be34a7399e76109ef33395f9d4\transformed\jetified-lifecycle-process-2.8.7\AndroidManifest.xml:31:17-49
+469            <meta-data
+469-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+470                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+470-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+471                android:value="androidx.startup" />
+471-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+472        </provider>
+473
+474        <service
+474-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:41:9-46:35
+475            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+475-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:42:13-88
+476            android:directBootAware="false"
+476-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:43:13-44
+477            android:enabled="@bool/enable_system_alarm_service_default"
+477-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:44:13-72
+478            android:exported="false" />
+478-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:45:13-37
+479        <service
+479-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:47:9-53:35
+480            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+480-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:48:13-84
+481            android:directBootAware="false"
+481-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:49:13-44
+482            android:enabled="@bool/enable_system_job_service_default"
+482-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:50:13-70
+483            android:exported="true"
+483-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:51:13-36
+484            android:permission="android.permission.BIND_JOB_SERVICE" />
+484-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:52:13-69
+485        <service
+485-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:54:9-59:35
+486            android:name="androidx.work.impl.foreground.SystemForegroundService"
+486-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:55:13-81
+487            android:directBootAware="false"
+487-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:56:13-44
+488            android:enabled="@bool/enable_system_foreground_service_default"
+488-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:57:13-77
+489            android:exported="false" />
+489-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:58:13-37
+490
+491        <receiver
+491-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:61:9-66:35
+492            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+492-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:62:13-88
+493            android:directBootAware="false"
+493-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:63:13-44
+494            android:enabled="true"
+494-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:64:13-35
+495            android:exported="false" />
+495-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:65:13-37
+496        <receiver
+496-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:67:9-77:20
+497            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+497-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:68:13-106
+498            android:directBootAware="false"
+498-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:69:13-44
+499            android:enabled="false"
+499-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:70:13-36
+500            android:exported="false" >
+500-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:71:13-37
+501            <intent-filter>
+501-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:73:13-76:29
+502                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+502-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:17-87
+502-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:25-84
+503                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+503-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:17-90
+503-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:25-87
+504            </intent-filter>
+505        </receiver>
+506        <receiver
+506-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:78:9-88:20
+507            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+507-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:79:13-104
+508            android:directBootAware="false"
+508-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:80:13-44
+509            android:enabled="false"
+509-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:81:13-36
+510            android:exported="false" >
+510-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:82:13-37
+511            <intent-filter>
+511-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:84:13-87:29
+512                <action android:name="android.intent.action.BATTERY_OKAY" />
+512-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:17-77
+512-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:25-74
+513                <action android:name="android.intent.action.BATTERY_LOW" />
+513-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:17-76
+513-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:25-73
+514            </intent-filter>
+515        </receiver>
+516        <receiver
+516-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:89:9-99:20
+517            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+517-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:90:13-104
+518            android:directBootAware="false"
+518-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:91:13-44
+519            android:enabled="false"
+519-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:92:13-36
+520            android:exported="false" >
+520-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:93:13-37
+521            <intent-filter>
+521-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:95:13-98:29
+522                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+522-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:17-83
+522-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:25-80
+523                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+523-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:17-82
+523-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:25-79
+524            </intent-filter>
+525        </receiver>
+526        <receiver
+526-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:100:9-109:20
+527            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+527-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:101:13-103
+528            android:directBootAware="false"
+528-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:102:13-44
+529            android:enabled="false"
+529-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:103:13-36
+530            android:exported="false" >
+530-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:104:13-37
+531            <intent-filter>
+531-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:106:13-108:29
+532                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+532-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:17-79
+532-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:25-76
+533            </intent-filter>
+534        </receiver>
+535        <receiver
+535-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:110:9-121:20
+536            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+536-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:111:13-88
+537            android:directBootAware="false"
+537-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:112:13-44
+538            android:enabled="false"
+538-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:113:13-36
+539            android:exported="false" >
+539-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:114:13-37
+540            <intent-filter>
+540-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:116:13-120:29
+541                <action android:name="android.intent.action.BOOT_COMPLETED" />
+541-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:81:17-78
+541-->E:\Projects\Wallet\budget\android\app\src\main\AndroidManifest.xml:81:25-76
+542                <action android:name="android.intent.action.TIME_SET" />
+542-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:17-73
+542-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:25-70
+543                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+543-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:17-81
+543-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:25-78
+544            </intent-filter>
+545        </receiver>
+546        <receiver
+546-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:122:9-131:20
+547            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+547-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:123:13-99
+548            android:directBootAware="false"
+548-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:124:13-44
+549            android:enabled="@bool/enable_system_alarm_service_default"
+549-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:125:13-72
+550            android:exported="false" >
+550-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:126:13-37
+551            <intent-filter>
+551-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:128:13-130:29
+552                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+552-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:17-98
+552-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:25-95
+553            </intent-filter>
+554        </receiver>
+555        <receiver
+555-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:132:9-142:20
+556            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+556-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:133:13-78
+557            android:directBootAware="false"
+557-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:134:13-44
+558            android:enabled="true"
+558-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:135:13-35
+559            android:exported="true"
+559-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:136:13-36
+560            android:permission="android.permission.DUMP" >
+560-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:137:13-57
+561            <intent-filter>
+561-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:139:13-141:29
+562                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+562-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:17-88
+562-->[androidx.work:work-runtime:2.7.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1b4f7aa1a239a902872cb87f708512ad\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:25-85
+563            </intent-filter>
+564        </receiver>
+565
+566        <uses-library
+566-->[androidx.window:window:1.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\a3a781a30b22012213db60789296c3e2\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+567            android:name="androidx.window.extensions"
+567-->[androidx.window:window:1.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\a3a781a30b22012213db60789296c3e2\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+568            android:required="false" />
+568-->[androidx.window:window:1.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\a3a781a30b22012213db60789296c3e2\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+569        <uses-library
+569-->[androidx.window:window:1.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\a3a781a30b22012213db60789296c3e2\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+570            android:name="androidx.window.sidecar"
+570-->[androidx.window:window:1.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\a3a781a30b22012213db60789296c3e2\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+571            android:required="false" />
+571-->[androidx.window:window:1.2.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\a3a781a30b22012213db60789296c3e2\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+572
+573        <meta-data
+573-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\beac9d0bdd43704515d8aaa34e5eb1b2\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+574            android:name="com.google.android.gms.version"
+574-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\beac9d0bdd43704515d8aaa34e5eb1b2\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+575            android:value="@integer/google_play_services_version" />
+575-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\beac9d0bdd43704515d8aaa34e5eb1b2\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+576
+577        <service
+577-->[androidx.core:core-remoteviews:1.1.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\69173140ddb024b45890c9924b78e4c7\transformed\jetified-core-remoteviews-1.1.0\AndroidManifest.xml:24:9-27:63
+578            android:name="androidx.core.widget.RemoteViewsCompatService"
+578-->[androidx.core:core-remoteviews:1.1.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\69173140ddb024b45890c9924b78e4c7\transformed\jetified-core-remoteviews-1.1.0\AndroidManifest.xml:25:13-73
+579            android:permission="android.permission.BIND_REMOTEVIEWS" />
+579-->[androidx.core:core-remoteviews:1.1.0] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\69173140ddb024b45890c9924b78e4c7\transformed\jetified-core-remoteviews-1.1.0\AndroidManifest.xml:26:13-69
+580
+581        <receiver
+581-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+582            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+582-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+583            android:directBootAware="false"
+583-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+584            android:enabled="true"
+584-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+585            android:exported="true"
+585-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+586            android:permission="android.permission.DUMP" >
+586-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+587            <intent-filter>
+587-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+588                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+588-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+588-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+589            </intent-filter>
+590            <intent-filter>
+590-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+591                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+591-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+591-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+592            </intent-filter>
+593            <intent-filter>
+593-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+594                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+594-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+594-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+595            </intent-filter>
+596            <intent-filter>
+596-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+597                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+597-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+597-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\af6df50e545cfe372ebdced33d0f6a85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+598            </intent-filter>
+599        </receiver>
+600
+601        <service
+601-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\382a9fcf830c9364ab626a5bb1b50375\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+602            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+602-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\382a9fcf830c9364ab626a5bb1b50375\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+603            android:exported="false" >
+603-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\382a9fcf830c9364ab626a5bb1b50375\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+604            <meta-data
+604-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\382a9fcf830c9364ab626a5bb1b50375\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+605                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+605-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\382a9fcf830c9364ab626a5bb1b50375\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+606                android:value="cct" />
+606-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\382a9fcf830c9364ab626a5bb1b50375\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+607        </service>
+608        <service
+608-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\f2d3029ef09de34ab34ebf601f827317\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+609            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+609-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\f2d3029ef09de34ab34ebf601f827317\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+610            android:exported="false"
+610-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\f2d3029ef09de34ab34ebf601f827317\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+611            android:permission="android.permission.BIND_JOB_SERVICE" >
+611-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\f2d3029ef09de34ab34ebf601f827317\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+612        </service>
+613
+614        <receiver
+614-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\f2d3029ef09de34ab34ebf601f827317\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+615            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+615-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\f2d3029ef09de34ab34ebf601f827317\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+616            android:exported="false" />
+616-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\f2d3029ef09de34ab34ebf601f827317\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+617
+618        <service
+618-->[androidx.room:room-runtime:2.2.5] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\05f065b978ae3abba83219a61a1cae27\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+619            android:name="androidx.room.MultiInstanceInvalidationService"
+619-->[androidx.room:room-runtime:2.2.5] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\05f065b978ae3abba83219a61a1cae27\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+620            android:directBootAware="true"
+620-->[androidx.room:room-runtime:2.2.5] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\05f065b978ae3abba83219a61a1cae27\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+621            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+621-->[androidx.room:room-runtime:2.2.5] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\05f065b978ae3abba83219a61a1cae27\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+622        <activity
+622-->[com.google.android.play:core-common:2.0.4] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1150abd7764ea715536c93f7ca98f045\transformed\jetified-core-common-2.0.4\AndroidManifest.xml:14:9-18:65
+623            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+623-->[com.google.android.play:core-common:2.0.4] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1150abd7764ea715536c93f7ca98f045\transformed\jetified-core-common-2.0.4\AndroidManifest.xml:15:13-93
+624            android:exported="false"
+624-->[com.google.android.play:core-common:2.0.4] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1150abd7764ea715536c93f7ca98f045\transformed\jetified-core-common-2.0.4\AndroidManifest.xml:16:13-37
+625            android:stateNotNeeded="true"
+625-->[com.google.android.play:core-common:2.0.4] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1150abd7764ea715536c93f7ca98f045\transformed\jetified-core-common-2.0.4\AndroidManifest.xml:17:13-42
+626            android:theme="@style/Theme.PlayCore.Transparent" />
+626-->[com.google.android.play:core-common:2.0.4] C:\Users\HopyJ\.gradle\caches\8.10.2\transforms\1150abd7764ea715536c93f7ca98f045\transformed\jetified-core-common-2.0.4\AndroidManifest.xml:18:13-62
+627    </application>
+628
+629</manifest>

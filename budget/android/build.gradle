@@ -1,4 +1,6 @@
+/* Old Code:
 buildscript {
+    //kotlin ver '1.9.0' "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version" classpath dependencies
     ext.kotlin_version = '1.9.0'
     repositories {
         google()
@@ -7,11 +9,13 @@ buildscript {
     }
 
     dependencies {
+        //(kind of apg ver?) gradle ver 7.3.1 'com.android.tools.build:gradle:7.3.1' classpath dependencies
         classpath 'com.android.tools.build:gradle:7.3.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath 'com.google.gms:google-services:4.3.14'
     }
 }
+*/
 
 allprojects {
     repositories {
@@ -23,9 +27,22 @@ allprojects {
 
 rootProject.buildDir = '../build'
 subprojects {
+    afterEvaluate { project ->
+        if (project.hasProperty('android')) {
+            project.android {
+                if (!hasProperty('namespace') || namespace == null || namespace.isEmpty()) {
+                    // Assign a default namespace based on the project name or group
+                    namespace = project.group.toString() ?: "com.budget.tracker_app" //"com.example.${project.name}"
+                }
+            }
+        }
+    }
+}
+/*
+subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
     project.evaluationDependsOn(':app')
-}
+}*/
 
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
